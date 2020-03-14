@@ -68,7 +68,10 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: ["@babel/preset-env", "@babel/preset-react"],
-            plugins: ["@babel/plugin-proposal-object-rest-spread"]
+            plugins: [
+              "@babel/plugin-proposal-object-rest-spread",
+              "@babel/plugin-proposal-class-properties"
+            ]
           }
         }
       },
@@ -81,9 +84,21 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              modules: true,
               importLoaders: 1,
-              localIdentName: "[name]_[local]_[hash:base64]",
+              modules: {
+                localIdentName: "[name]_[local]_[hash:base64]"
+              }
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(jpe?g|gif|png|svg)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 10000
             }
           }
         ]
