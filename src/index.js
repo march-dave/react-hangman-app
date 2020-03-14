@@ -6,7 +6,6 @@ const Index = () => {
   return (
     <div>
       <Hangman />
-      Hello React! You are ready for heroku
     </div>
   );
 };

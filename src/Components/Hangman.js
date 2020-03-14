@@ -2,18 +2,24 @@ import React, { Component } from "react";
 import "./Hangman.css";
 import { randomWord } from "./Words.js";
 
-import step0 from "../Images/hang0.gif";
-import step1 from "../Images/hang1.gif";
-import step2 from "../Images/hang2.gif";
-import step3 from "../Images/hang3.gif";
-import step4 from "../Images/hang4.gif";
-import step5 from "../Images/hang5.gif";
-import step6 from "../Images/hang6.gif";
+// import step0 from "../Images/hang6.gif";
+import step0 from "../Images/0.png";
+import step1 from "../Images/1.png";
+import step2 from "../Images/2.png";
+import step3 from "../Images/3.png";
+import step4 from "../Images/4.png";
+import step5 from "../Images/5.png";
+import step6 from "../Images/6.png";
+import step7 from "../Images/7.png";
+import step8 from "../Images/8.png";
+import step9 from "../Images/9.png";
+import step10 from "../Images/10.png";
+import step11 from "../Images/11.png";
 
 class Hangman extends Component {
   static defaultProps = {
-    maxWrong: 6,
-    images: [step0, step1, step2, step3, step4, step5, step6]
+    maxWrong: 12,
+    images: [step0, step1, step2, step3, step4, step5, step6, step7, step8, step9, step10, step11]
   };
 
   constructor(props) {
@@ -40,9 +46,9 @@ class Hangman extends Component {
   }
 
   generateButtons() {
-    return "abcdefghjklmnopqrstuvwxyz".split("").map(letter => (
+    return "abcdefghijklmnopqrstuvwxyz".split("").map(letter => (
       <button
-        class="btn btn-lg btn-primary m-2"
+        className="btn btn-lg btn-primary m-2"
         key={letter}
         value={letter}
         onClick={this.handleGuess}
@@ -84,7 +90,7 @@ class Hangman extends Component {
           <img src={this.props.images[this.state.mistake]} alt="" />
         </div>
         <div className="text-center">
-          <p>Guess the Programming Language:</p>
+          <p>Guess the word:</p>
           <p>{!gameOver ? this.guessedWord() : this.state.answer}</p>
           <p>{gameStat}</p>
           <button className="btn btn-info" onClick={this.resetButton}>
