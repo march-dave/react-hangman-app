@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Hangman from "./Components/Hangman";
+import App from "./Components/App";
+// import Hangman from "./Components/Hangman";
 
 const Index = () => {
   return (
     <div>
-      <Hangman />
+      <App />
     </div>
   );
 };

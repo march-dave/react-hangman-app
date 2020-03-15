@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./Hangman.css";
 import { randomWord } from "./Words.js";
 
-// import step0 from "../Images/hang6.gif";
 import step0 from "../Images/0.png";
 import step1 from "../Images/1.png";
 import step2 from "../Images/2.png";
