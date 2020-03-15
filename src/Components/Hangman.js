@@ -14,11 +14,12 @@ import step8 from "../Images/8.png";
 import step9 from "../Images/9.png";
 import step10 from "../Images/10.png";
 import step11 from "../Images/11.png";
+import step12 from "../Images/12.png";
 
 class Hangman extends Component {
   static defaultProps = {
-    maxWrong: 12,
-    images: [step0, step1, step2, step3, step4, step5, step6, step7, step8, step9, step10, step11]
+    maxWrong: 13,
+    images: [step0, step1, step2, step3, step4, step5, step6, step7, step8, step9, step10, step11, step12]
   };
 
   constructor(props) {
