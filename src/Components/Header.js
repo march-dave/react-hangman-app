@@ -11,7 +11,7 @@ class Header extends Component {
                     <div className="row">
                     <div className="col-xs-12">
                         <Link className="btn btn-success menu" to="/">Home</Link>
-                        <Link className="btn btn-success menu" to="/about">About</Link>
+                        <Link className="btn btn-success menu" to="/tutorial">Tutorial</Link>
                     </div>
                     </div>
                 </div>

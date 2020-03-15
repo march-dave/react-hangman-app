@@ -4,7 +4,7 @@ import Hangman from "./Hangman";
 
 import Header from './Header';
 // import Home from './Home';
-import About from './About';
+import Tutorial from './Tutorial';
 
 class App extends Component {
     render() {
@@ -16,7 +16,7 @@ class App extends Component {
                 <div className="container">
                 <Header />
                     <Route exact path="/" component={Hangman} />
-                    <Route path="/about" component={About}/>
+                    <Route path="/tutorial" component={Tutorial}/>
                     {/* <Route path="/members" component={Members} />
                     <Route path="/songs" component={SongList} /> */}
                 </div>
