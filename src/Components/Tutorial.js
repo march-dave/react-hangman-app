@@ -14,8 +14,8 @@ class Tutorial extends Component {
           <Youtube
             // video={this.currentLink}
             video="Ujfxbr9myaw"
-            width="320"
-            height="240"
+            width="1024"
+            height="768"
             autoplay="1"
             rel="1"
             modest="1"
