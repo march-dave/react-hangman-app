@@ -11,7 +11,8 @@ let programming_languages = ["life", "pig", "the"
 ,"pig"
 ,"me"
 ,"pizza"
-
+,"hangman"
+,"you"
 ];
 function randomWord() {
   return programming_languages[
