@@ -13,7 +13,7 @@ let programming_languages = ["life", "pig", "the"
 ,"pizza"
 ,"hangman"
 ,"you"
-,"monoploy"
+,"monopoly"
 ];
 function randomWord() {
   return programming_languages[
